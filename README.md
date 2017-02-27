@@ -1,5 +1,4 @@
 # hzspk
-Kontostand-Parser (Harzsparkasse)
 
 <img src="https://mn.tn/h/hzspk-x.png">
 
