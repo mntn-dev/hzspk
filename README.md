@@ -23,7 +23,7 @@
   ////////////////////////   
 
 
-&bull; liefert den aktuellen kontostand des per id und
-  pin definierten online-banking-zugangs d. harzsparkasse
+&bull; liefert des aktuelle gesamtsaldo des per id und
+  pin definierten online-banking-zugangs der <a href="https://www.harzsparkasse.de/" target="_blank">harzsparkasse</a>
        
-       </pre>
+</pre>
