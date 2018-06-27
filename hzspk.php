@@ -28,7 +28,7 @@ $P='';        #PIN(5)
   $$$$$$$$$$$$$$$$$$$$$$$$$ 
   ////////////////////////   
   
-  hzspk.php - v0.3 (Jan 10, 2018)
+  hzspk.php - v0.4 (Jun 27, 2018)
    
 
   */
@@ -80,6 +80,6 @@ if(!$x||!$y||!$z||!$f)die('E: logout: html parsing issue');
 @file_get_contents($Q.$f,!1,stream_context_create(array('http'=>array('max_redirects'=>0,'method'=>'POST','header'=>"Cookie: $J $I $C\r\n",'content'=>"$x&$y&$z"))));
 
 
-preg_match("#>([\-.,0-9]+)&nbsp;E#msi",$_,$_);die((@$_[1])?$_[1]:'E: hzspk: parsing issue (no account balance)');
+preg_match("#>Gesamtsaldo<.*?\"offscreen\">([\-.,0-9]+) E#msi",$_,$_);die((@$_[1])?$_[1]:'E: hzspk: parsing issue (no account balance)');
 
 ?>
